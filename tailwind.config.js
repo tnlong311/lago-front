@@ -14,10 +14,10 @@ module.exports = {
         }),
         animation: {
           none: 'none',
+          pulse: 'pulse 1.5s ease-in-out 0.5s infinite',
           spin: 'spin 1s linear infinite',
-          ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
-          pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-          bounce: 'bounce 1s infinite',
+          enter: 'enter 250ms cubic-bezier(0.4, 0, 0.2, 1) 1',
+          fadeIn: 'fadeIn 0.2s ease-in-out forwards',
         },
         aria: {
           busy: 'busy="true"',
@@ -572,31 +572,31 @@ module.exports = {
           DEFAULT: '100%',
         },
         keyframes: {
-          spin: {
-            to: {
-              transform: 'rotate(360deg)',
-            },
-          },
-          ping: {
-            '75%, 100%': {
-              transform: 'scale(2)',
-              opacity: '0',
-            },
-          },
           pulse: {
-            '50%': {
-              opacity: '.5',
+            '0%': { opacity: '1' },
+            '50%': { opacity: '.4' },
+            '100%': { opacity: '1' },
+          },
+          spin: {
+            from: { transform: 'rotate(0deg)' },
+            to: { transform: 'rotate(360deg)' },
+          },
+          enter: {
+            '0%': {
+              transform: 'translateX(-120%)',
+              marginTop: '0',
+              maxHeight: '0',
+            },
+            '20%': { transform: 'translateX(-120%)' },
+            '100%': {
+              transform: 'translateX(0)',
+              marginTop: ({ theme }) => theme('spacing.1'),
+              maxHeight: '300px',
             },
           },
-          bounce: {
-            '0%, 100%': {
-              transform: 'translateY(-25%)',
-              animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
-            },
-            '50%': {
-              transform: 'none',
-              animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
-            },
+          fadeIn: {
+            '0%': { opacity: '0' },
+            '100%': { opacity: '1' },
           },
         },
         letterSpacing: {
