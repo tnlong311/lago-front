@@ -1,6 +1,0 @@
-node_modules
-dist
-.github
-globals.d.ts
-generated
-cypress/*
