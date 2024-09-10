@@ -391,10 +391,7 @@ const CustomerDetails = () => {
                     }),
                     component: (
                       <SideBlock>
-                        <CustomerUsage
-                          customerTimezone={safeTimezone}
-                          premiumWarningDialogRef={premiumWarningDialogRef}
-                        />
+                        <CustomerUsage premiumWarningDialogRef={premiumWarningDialogRef} />
                       </SideBlock>
                     ),
                   },
