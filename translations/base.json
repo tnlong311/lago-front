@@ -713,7 +713,6 @@
   "text_633dae57ca9a923dd53c2093": "Detailed usage of {{billableMetricName}}",
   "text_633dae57ca9a923dd53c2097": "From {{fromDate}} to {{toDate}}",
   "text_633dae57ca9a923dd53c20a3": "For {{totalUnits}} units|For {{totalUnits}} unit|For {{totalUnits}} units",
-  "text_633dae57ca9a923dd53c20cf": "Close",
   "text_635b975ecea4296eb76924b1": "All mandatory fields are filled",
   "text_635b975ecea4296eb76924b7": "Mandatory fields not filled",
   "text_63ba9ee977a67c9693f50aea": "Search billable metrics",
@@ -2393,5 +2392,12 @@
   "text_1725550089200omw15t6nh0h": "This customer inherits this rule from the <a href=\"{{link}}\">general settings</a>. Define whether to skip or finalize empty invoices for this customer.",
   "text_1725550089200svn5rdwfftc": "Empty invoice setting is applied only for this customer.",
   "text_1725550661207stz6kovtzkp": "Search or select an invoicing rule",
-  "text_1725550747818f6v0c35vzdk": "Add invoicing rule"
+  "text_1725550747818f6v0c35vzdk": "Add invoicing rule",
+  "text_1725983967306v77yaw6dtm1": "Click on a <a href=\"{{link}}\">subscription</a> details to view its current usage.",
+  "text_1725983967306cf8dwr2r4u2": "Current usage",
+  "text_1725983967306qz0npfuhlo1": "Refresh this section",
+  "text_1725983967306dtwnapp4mw9": "Charge name",
+  "text_1725983967306c736sdyjohn": "See filters breakdown",
+  "text_1725983967306cei92rkdtvb": "Usage",
+  "text_1726044816685r61awuydvji": "Close details"
 }
